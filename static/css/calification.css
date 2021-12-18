@@ -1,0 +1,30 @@
+body {
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0px auto;
+    overflow: hidden;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    color:#ffffff !important;
+  }
+
+.gadet{
+    background-color: rgba(63, 99, 216, 0.589);
+    max-width: 20rem;
+    text-align: 50%;
+    display: flex; /* or inline-flex */
+}
+.name{
+    text-shadow: 0.1rem;
+    padding-bottom: 3rem;
+}
+.circle {
+    background: rgb(57, 199, 204);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex; /* or inline-flex */
+    align-items: center;
+    justify-content: center;
+}
+.texto_calificacion{
+    font-size: 2rem;
+}

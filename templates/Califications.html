@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/calification.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="gadet" id="reload">
+        <h1 class="name">{{name_part}}</h1>
+        <p id="Num_1" class="circle texto_calificacion">?</p> 
+    </div>
+    <!--<script src="{{url_for('static', filename='update.js')}}"></script>-->
+    <script>
+        numero = document.getElementById("Num_1");
+        numero.innerHTML = numero
+
+        let ws = new WebSocket("http://localhost:8080/makeuuidHola")
+        ws.send('hola')
+    </script>
+</body>
+</html>
